@@ -1,0 +1,4 @@
+#promotion{margin-top: 0px;}
+#promotionsmall{margin-top: 25px;}
+#sub{text-decoration: none;}#sub:hover{text-decoration: underline;cursor: pointer;}
+#frz{margin-top: -20px;position: relative;margin-bottom: 0px;z-index: 1;}
