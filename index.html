@@ -103,8 +103,7 @@
     <div class="parallax">
       <div class="video-container hide-on-med-and-down">
         <!--video youtube embebed-->
-        <iframe id="video-background" width="1280" height="720" src="//www.youtube.com/embed/6Qitz7kFrN8?rel=0&amp;controls=0&amp;loop=1&amp;&playlist=6Qitz7kFrN8;showinfo=0&amp;autoplay=1&amp;html5=1&amp;allowfullscreen=true&amp;"
-          frameborder="0" allowfullscreen></iframe>
+        <iframe id="video-background" width="1280" height="720" src="https://www.youtube.com/embed/6Qitz7kFrN8?rel=0&amp;controls=0&amp;loop=1&amp;&playlist=6Qitz7kFrN8;showinfo=0&amp;autoplay=1&amp;html5=1&amp;allowfullscreen=true&amp;" frameborder="0" allowfullscreen></iframe>
       </div>
       <img src="img/home.jpg" alt="Unsplashed background img 1" class="hide-on-large-only responsive-img">
     </div>
@@ -832,7 +831,13 @@
   <script src="js/init.js"></script>
   <script src="js/owl.carousel.min.js"></script>
   <script>
-    $(document).ready(function () { $("#owl-people").owlCarousel({ autoPlay: 3000, loop: true, autoplay: true, autoplayTimeout: 3000, autoplayHoverPause: true, margin: 10, stagePadding: 10, dots: true, responsive: { 0: { items: 1 }, 768: { items: 2 }, 1000: { items: 3 } } }); });
+
+    var pl = true;
+    if ($(window).width() > 1000) {
+      pl = false;
+    }
+
+    $(document).ready(function () { $("#owl-people").owlCarousel({ autoPlay: 3000, loop: true, autoplay: pl, autoplayTimeout: 3000, autoplayHoverPause: true, margin: 10, stagePadding: 10, dots: true, responsive: { 0: { items: 1 }, 768: { items: 2 }, 1000: { items: 3 } } }); });
     $(document).ready(function () { $("#owl-calendar").owlCarousel({ autoPlay: 2500, loop: true, autoplay: true, autoplayTimeout: 5000, autoplayHoverPause: true, margin: 10, stagePadding: 10, responsive: { 0: { items: 1 }, 768: { items: 1 }, 1000: { items: 1 } } }); });
     $(document).ready(function () { $(".dropdown-button").dropdown({ hover: true, belowOrigin: true }); });
     $(document).ready(function () { $('.modal').modal(); });
