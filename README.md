@@ -1,6 +1,6 @@
 # CollegeInstitute
 Website for College Institute by Sergio Salmerón
 
-FUMIPGREEN Control de Plagas, es una empresa familiar con experiencia en la prestación de servicios especializados de alta calidad en residencias, industrias, comercios, todo tipo de negocios e instituciones enfatizando el uso de prácticas correctivas y preventivas simples y económicas para el control de plagas. Además de ser amigable con el medio ambiente sin causar perjuicio al ser humano y mascotas de la familia.
+TCI is a center where young Nicaraguans from public and private schools work together for a better Nicaragua. From the ninth grade (third year) they can apply to the TCI Fellows program, and are selected for their maturity, commitment, and vocation for service.
 
 Made with ❤ by Jake Zeledón
