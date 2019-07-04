@@ -96,7 +96,7 @@ footer.page-footer {
 
 .testimonial-quote blockquote p:first-child:before {
   content: '\201C';
-  color: #81bedb;
+  color: #00447E;
   font-size: 7.5em;
   font-weight: 700;
   opacity: .3;
@@ -107,13 +107,14 @@ footer.page-footer {
   z-index: -300;
 }
 
-.testimonial-quote img {
-  border: 3px solid #9CC1D3;
+.img-blockquote img {
+  border: 3px solid #00447E;
   border-radius: 50%;
   display: block;
-  width: 120px;
-  height: 120px;
-  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: auto;
   top: -.2em; 
   left: 0;    
 }
@@ -139,7 +140,7 @@ footer.page-footer {
 }
 
 .testimonial-quote .quote-container {
-  padding-left: 160px; 
+  padding-left: 20px; 
 }
 
 .testimonial-quote.right .quote-container {
