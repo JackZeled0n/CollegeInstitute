@@ -1,6 +1,6 @@
 # CollegeInstitute
 Website for College Institute by Sergio Salmerón
 
-TCI is a center where young Nicaraguans from public and private schools work together for a better Nicaragua. From the ninth grade (third year) they can apply to the TCI Fellows program, and are selected for their maturity, commitment, and vocation for service.
+Club RAMA is a Nicaraguan project that began with a group of high school students from different schools.
 
 Made with ❤ by Jake Zeledón
