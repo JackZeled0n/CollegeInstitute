@@ -1,206 +1,164 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
-  <title>The College Institute</title>
-  <!--Favicon-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Seguridad: solo se cargan recursos de este sitio, GSAP (jsDelivr), Google Fonts y el Google Form. -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' https://cdn.jsdelivr.net; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; frame-src https://docs.google.com; connect-src 'self'; manifest-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'; upgrade-insecure-requests">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Admisión TCI Fellows | The College Institute</title>
+  <meta name="description" content="Aplica al programa TCI Fellows de The College Institute en Managua, Nicaragua, a partir de 9no grado (tercer año).">
+  <meta name="theme-color" content="#00447E">
+
+  <meta property="og:title" content="Admisión TCI Fellows | The College Institute">
+  <meta property="og:description" content="Aplica al programa TCI Fellows a partir de 9no grado (tercer año).">
+  <meta property="og:image" content="https://www.collegeinstitute.net/img/hero-tci-center-2400.jpg">
+
   <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" href="img/favicon/favicon-32x32.png" sizes="32x32">
   <link rel="icon" type="image/png" href="img/favicon/favicon-16x16.png" sizes="16x16">
   <link rel="manifest" href="img/favicon/manifest.json">
-  <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
-  <meta name="theme-color" content="#ffffff">
-  <!-- CSS  -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
-  <link href="css/foo.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#00447E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://docs.google.com">
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="img/hero-tci-center-2400.jpg" imagesrcset="img/hero-tci-center-1200.jpg 1200w, img/hero-tci-center-2400.jpg 2400w" imagesizes="100vw">
+  <link href="css/admision.css" rel="stylesheet">
+  <script src="js/inicio.js"></script>
 </head>
 
-<body>
-  <div id="index-banner" class="parallax-container">
-    <nav class="" role="navigation" style="background: rgba(182, 201, 218,0.6);">
-      <div class="nav-wrapper container">
-        <a id="logo-container" href="/index.html" class="brand-logo">
-          <img src="img/isologomenu.png" />
+<body id="top">
+  <a class="skip" href="#solicitud">Ir al formulario</a>
+
+  <main>
+    <section class="hero">
+      <img class="hero__photo"
+        src="img/hero-tci-center-2400.jpg"
+        srcset="img/hero-tci-center-1200.jpg 1200w, img/hero-tci-center-2400.jpg 2400w"
+        sizes="100vw"
+        alt="Estudiantes trabajando en el TCI Center for Growth, junto a la columna con las palabras Dream y Focus"
+        width="2400" height="1600" fetchpriority="high">
+
+      <header class="hero__bar">
+        <a href="/" class="crest" data-anim-hide aria-label="The College Institute, inicio">
+          <img src="img/isologo-menu-mobile.png" alt="The College Institute" width="150" height="150">
         </a>
-        <ul class="right hide-on-med-and-down">
-          <li>
-            <a href="/index.html" style="color:#00447E">
-              <b>Admisión</b>
-            </a>
-          </li>
-          
-        </ul>
+        <nav class="hero__nav" data-anim-hide aria-label="Accesos rápidos">
+          <a href="#contacto" class="hero__nav-link hero__nav-link--secondary">Contacto</a>
+          <a href="#solicitud" class="hero__nav-link">Aplicar ahora</a>
+        </nav>
+      </header>
 
-        <ul id="nav-mobile" class="side-nav">
-          <img src="img/isologomenu.png" class="brand-logo center">
-          <br>
-          <li class="center-align">
-            <a href="/index.html" style="color:#00447E">Admisión</a>
-          </li>
-        </ul>
-
-        <a href="#" data-activates="nav-mobile" class="button-collapse" style="color:#00447E">
-          <i class="material-icons">menu</i>
-        </a>
-
-      </div>
-    </nav>
-
-    <div class="parallax">
-      <img src="img/OPT-Octaviano-en-Hogar-Zacarias-Guerra.jpg" alt="Unsplashed background img 1" class="responsive-img">
-    </div>
-  </div>
-
-  <div style="background:#EEEEEE">
-    <div class="section">
-      <div class="center-align white container section">
-        <div class="center-align section">
-          <h3 style="color:#BC0723" class="center-align">
-            <FONT FACE="Libre Baskerville">Aplica para Admisión</FONT>
-          </h3>
-          <h5>
-            <p align="justify" class="container" style="color:#414141">
-              <FONT FACE="Libre Baskerville">
-                Si estás listo para tomar las riendas de tu vida, aplica a nuestro programa de TCI Fellows a partir del
-                9no Grado (Tercer Año).
-              </FONT>
-            </p>
-          </h5>
-          <br>
+      <div class="hero__content">
+        <h1 class="hero__title" data-anim-hide>Aplica a TCI&nbsp;Fellows</h1>
+        <div class="hero__rule" aria-hidden="true"></div>
+        <div class="hero__intro" data-anim-hide>
+          <p>Para quienes están listos para tomar las riendas de su vida. Desde 9no grado (tercer año).</p>
+          <a class="hero__cta" href="#solicitud">Empezar mi solicitud</a>
         </div>
+      </div>
+    </section>
 
-        <div class="section">
-          <div class="row">
-            <div class="col s12 m12 l8">
-              <div class="card">
-                <div class="card-content">
-                  <iframe
-                    src="https://docs.google.com/forms/d/e/1FAIpQLSfFfo2V6OgIj8GPqaIadHSXxHRnaT38LqlzruorlMWYuA6Aqw/viewform?embedded=true"
-                    width="100%" height="750" frameborder="0" marginheight="0" marginwidth="0">Cargando...</iframe>
-                </div>
-              </div>
+    <section class="apply" id="solicitud" aria-labelledby="apply-title">
+      <aside class="apply__guide">
+        <div class="guide">
+          <h2 id="apply-title" class="guide__title">Antes de empezar</h2>
+          <p class="guide__lead">El formulario está en inglés. Te pide esto, en este orden:</p>
+
+          <ol class="steps">
+            <li class="steps__item">
+              <span class="steps__name">Tus datos</span>
+              <span class="steps__detail">Contacto, fecha de nacimiento y nacionalidad</span>
+            </li>
+            <li class="steps__item">
+              <span class="steps__name">Tus padres</span>
+              <span class="steps__detail">Nombre, teléfono y correo de cada uno</span>
+            </li>
+            <li class="steps__item">
+              <span class="steps__name">Tu colegio</span>
+              <span class="steps__detail">Fecha de graduación y promedio académico</span>
+            </li>
+            <li class="steps__item">
+              <span class="steps__name">Tus actividades</span>
+              <span class="steps__detail">Las extracurriculares que tengas</span>
+            </li>
+            <li class="steps__item">
+              <span class="steps__name">Tu plan universitario</span>
+              <span class="steps__detail">Presupuesto anual aproximado y países de interés</span>
+            </li>
+          </ol>
+
+          <div class="guide__help">
+            <p>¿Dudas mientras lo llenas?</p>
+            <div class="guide__buttons">
+              <a href="https://wa.me/50578771100" rel="noopener noreferrer">WhatsApp</a>
+              <a href="mailto:info@collegeinstitute.net">Correo</a>
             </div>
-            <aside class="col s12 m12 l4 ">
-              <div class="col s12 m12 l12">
-                <img src="img/OPT-Unicorns-en-el-Jardin.jpg" class="responsive-img z-depth-3 materialboxed">
-                <br>
-                <br>
-              </div>
-
-              <div class="col s12 m12 l12">
-                <img src="img/OPT---Impresora-3D.jpg" class="responsive-img z-depth-3 materialboxed">
-                <br>
-                <br>
-              </div>
-
-              <div class="col s12 m12 l12">
-                <img src="img/Granada.jpg" class="responsive-img z-depth-3 materialboxed">
-              </div>
-            </aside>
+            <a class="guide__out" id="form-open"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSfFfo2V6OgIj8GPqaIadHSXxHRnaT38LqlzruorlMWYuA6Aqw/viewform"
+              target="_blank" rel="noopener noreferrer">Abrir el formulario en Google Forms</a>
           </div>
         </div>
+      </aside>
+
+      <div class="apply__form" id="form-top">
+        <div class="form-frame" data-state="loading">
+          <p class="form-frame__loading" role="status">Cargando el formulario…</p>
+          <iframe id="tci-form" title="Formulario de solicitud TCI Fellows"
+            src="https://docs.google.com/forms/d/e/1FAIpQLSfFfo2V6OgIj8GPqaIadHSXxHRnaT38LqlzruorlMWYuA6Aqw/viewform?embedded=true"
+            loading="eager" allowtransparency="true"
+            referrerpolicy="strict-origin-when-cross-origin"
+            sandbox="allow-scripts allow-same-origin allow-forms allow-popups allow-popups-to-escape-sandbox">Cargando…</iframe>
+        </div>
       </div>
+    </section>
+
+    <section class="gallery" aria-label="Fotos de la vida en TCI">
+      <figure class="gallery__item gallery__item--wide">
+        <img src="img/OPT-Unicorns-en-el-Jardin.jpg" alt="Fellows de TCI conversando en el jardín" loading="lazy" width="2400" height="1600">
+      </figure>
+      <figure class="gallery__item">
+        <img src="img/OPT---Impresora-3D.jpg" alt="Impresora 3D en el laboratorio de TCI" loading="lazy" width="3000" height="2000">
+      </figure>
+      <figure class="gallery__item">
+        <img src="img/Granada.jpg" alt="Vista de la catedral de Granada, Nicaragua" loading="lazy" width="1013" height="669">
+      </figure>
+    </section>
+  </main>
+
+  <footer class="footer" id="contacto">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <img src="img/logos/isologo-blanco.svg" alt="The College Institute" width="286" height="126">
+        <address>
+          TCI Center for Growth<br>
+          Calle Los Laureles #64, Las Colinas<br>
+          Managua, Nicaragua
+        </address>
+      </div>
+
+      <ul class="footer__links">
+        <li><a href="https://wa.me/50578771100" rel="noopener noreferrer"><span>WhatsApp Nicaragua</span>+505 7877-1100</a></li>
+        <li><a href="tel:+12026306790"><span>Teléfono Estados Unidos</span>+1 (202) 630-6790</a></li>
+        <li><a href="mailto:info@collegeinstitute.net"><span>Correo</span>info@collegeinstitute.net</a></li>
+        <li><a href="https://www.facebook.com/collegeinstitute/" rel="noopener noreferrer"><span>Facebook</span>/collegeinstitute</a></li>
+      </ul>
     </div>
-  </div>
 
-  <footer class="page-footer white">
-    <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <div class="col l12 s12 center-align hide-on-med-and-down">
-            <img class="responsive-img" src="img/logo-footer.png">
-          </div>
-          <div class="col l12 s12 center-align hide-on-large-only">
-            <img class="responsive-img" src="img/isologo-footerrest.png">
-          </div>
-          <div class="col l12 s12 m12 center-align">
-            <a>Copyright © 2025</a>
-          </div>
-          <div class="col l12 s12 center-align">
-            <br>
-            <a href="https://www.facebook.com/collegeinstitute/">
-              <i class="material-icons center">
-                <img src="img/fblogo.png">
-              </i>
-            </a>
-            <br></br>
-          </div>
-        </div>
-        <div class="col l6 s12 m12 hide-on-med-and-down">
-          <h5 class="" style="color:#00447E">Contacto</h5>
-          <ul>
-            <li>
-              <a style="color:#00447E">
-                <i class="tiny material-icons left">phone</i>NI: +(505) 7877-1100 </a>
-            </li>
-            <li>
-              <a style="color:#00447E">
-                <i class="tiny material-icons left">phone</i>US: +1 (202) 630-6790</a>
-            </li>
-            <li>
-              <a style="color:#00447E">
-                <i class="tiny material-icons left">home</i>TCI Center for Growth</a>
-            </li>
-            <li>
-              <a style="color:#00447E">
-                <i class="tiny material-icons left">home</i>Calle Los Laureles #64, Las Colinas - Managua, Nicaragua</a>
-            </li>
-            <br></br>
-            <li class="divider"></li>
-            <br></br>
-            <li>
-              <a style="color:#00447E">
-                <i class="tiny material-icons left">email</i>Email:
-                <a>info@collegeinstitute.net</a>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="col l6 s12 m12 hide-on-large-only center-align">
-          <h5 class="" style="color:#00447E">Contacto</h5>
-          <ul>
-            <li>
-              <a style="color:#00447E">
-                <i class="tiny material-icons ">phone</i>NI: +(505) 78771100 </a>
-            </li>
-            <li>
-              <a style="color:#00447E">
-                <i class="tiny material-icons ">phone</i>US: +1 (202) 630-6790</a>
-            </li>
-            <li>
-              <a style="color:#00447E">
-                <i class="tiny material-icons ">home</i>TCI Center for Growth</a>
-            </li>
-            <li>
-              <a style="color:#00447E">
-                <i class="tiny material-icons ">home</i>Calle Los Laureles #64, Las Colinas - Managua, Nicaragua</a>
-            </li>
-            <br></br>
-            <li class="divider"></li>
-            <br></br>
-            <li>
-              <a style="color:#00447E">
-                <i class="tiny material-icons ">email</i>Email:
-                <a>info@collegeinstitute.net</a>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
+    <div class="footer__legal">
+      <p>© <span id="year">2026</span> The College Institute</p>
+      <a href="#top">Volver arriba</a>
     </div>
   </footer>
 
-  <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="js/materialize.min.js"></script>
-  <script src="js/init.js"></script>
-  <script>
-    $(document).ready(function () { $(".dropdown-button").dropdown({ hover: true, belowOrigin: true }); });
-  </script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js" integrity="sha384-HOvlOYPIs/zjoIkWUGXkVmXsjr8GuZLV+Q+rcPwmJOVZVpvTSXQChiN4t9Euv9Vc" crossorigin="anonymous" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js" integrity="sha384-P8VzCVnT9NBUkMrpcIZrJbA7EBjJvh/fJS6PmP+4nLIM284DtsImIv8D0fFjIkeh" crossorigin="anonymous" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js" integrity="sha384-xb96EMJeax+NLXMC88ZBa1xAeAW+kn+horHh/zFlbMLG2UPWhMJJSlv7fi57hS+Q" crossorigin="anonymous" defer></script>
+  <script src="js/animaciones.js" defer></script>
+  <script src="js/pagina.js"></script>
 </body>
 
 </html>
